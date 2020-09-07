@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: purple;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+#header {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#header h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.playerDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.playerDetails span {
+  display: block;
+  font-size: 3.5rem;
+}
+
+.gameBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice {
+  flex-basis: 40%;
+}
+
+#rollBtn {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: 5px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out all;
+}
+
+#rollBtn:hover {
+  background: white;
+  color: purple;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
